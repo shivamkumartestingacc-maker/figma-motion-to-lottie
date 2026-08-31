@@ -1,0 +1,27 @@
+{
+  "name": "figma-motion-to-lottie",
+  "version": "0.1.0",
+  "description": "Figma plugin that exports Figma Motion animations as Lottie JSON / dotLottie (.lottie) files.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "watch": "node build.mjs --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@figma/plugin-typings": "1.137.0",
+    "@types/jsdom": "^30.0.0",
+    "@types/node": "^22.0.0",
+    "esbuild": "^0.25.0",
+    "jsdom": "^30.0.1",
+    "typescript": "^5.8.0",
+    "vitest": "^3.0.0"
+  },
+  "dependencies": {
+    "jszip": "^3.10.1",
+    "lottie-web": "^5.13.0"
+  }
+}
